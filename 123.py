@@ -36,12 +36,4 @@ if a=="開燈":
         Hello()
 
 
-
-def Hello():
-    print("燈已經打開")
-
-if a=="開燈":
-    Hello()
-
-
 #上面程式是利用 SpeechRecognition 模組中的 recognixe_google() 函數透過 Google 語音辨識 API 來將麥克風收到的語音物件 audio 辨識成指定語系的文字 :
