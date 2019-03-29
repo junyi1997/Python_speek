@@ -28,10 +28,19 @@ with sr.Microphone() as source:
 # recognize speech using Google Speech Recognition 
 try:
     print("Google Speech Recognition thinks you said:")
-    print(r.recognize_google(audio, language="zh-TW"))
+    a=r.recognize_google(audio, language="zh-TW")
+    print(a)
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
     print("No response from Google Speech Recognition service: {0}".format(e))
+
+
+def Hello():
+    print("燈已經打開")
+
+if a=="開燈":
+    Hello()
+
 
 #上面程式是利用 SpeechRecognition 模組中的 recognixe_google() 函數透過 Google 語音辨識 API 來將麥克風收到的語音物件 audio 辨識成指定語系的文字 :
